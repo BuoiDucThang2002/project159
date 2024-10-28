@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/intro"
+                tools:srcCompat="@drawable/intro" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's Find the"
+                android:textColor="@color/black"
+                android:textSize="31sp"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best &amp; Healthy Grocery"
+                android:textColor="@color/green"
+                android:layout_marginTop="16sp"
+                android:textSize="31sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to our world of wholesome delights\n Explore nature's goodness with our vibrant\n
+    selection of healthy and delicious furtus."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/introBtn"
+                android:background="@drawable/green_background"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="24dp"
+                style="@android:style/Widget"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:textStyle="bold"
+                android:textSize="21dp"
+
+                android:text="Get Started" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience the joy of shopping right here!"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_marginTop="26dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
